@@ -1,5 +1,5 @@
 # SSO-OAuth2-SpringBoot2-JDBC
-SSO-OAuth2-SpringBoot2-JDBC
+
 CREATE TABLE users 
   ( 
      username VARCHAR(50) NOT NULL PRIMARY KEY, 

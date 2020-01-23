@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:oracle:thin:@YOUR_IP:1521/YOUR_SCHEMA
+    url: jdbc:mysql://localhost:3306/your_schema
     username: YOUR_USER
     password: YOUR_PASSWORD
     type: org.apache.tomcat.jdbc.pool.DataSource
@@ -15,7 +15,7 @@ spring:
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.Oracle10gDialect
+        dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
         id:
           new_generator_mappings: false

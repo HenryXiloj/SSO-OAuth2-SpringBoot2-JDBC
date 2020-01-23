@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@YOUR_IP:1521/YOUR_SCHEMA
+    username: YOUR_USER
+    password: YOUR_PASSWORD
+    type: org.apache.tomcat.jdbc.pool.DataSource
+    tomcat:
+      initial-size: 15
+      max-wait: 20000
+      max-active: 50
+      max-idle: 15
+      min-idle: 8
+      default-auto-commit: true
+      test-on-borrow: false
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+        format_sql: true
+        id:
+          new_generator_mappings: false
